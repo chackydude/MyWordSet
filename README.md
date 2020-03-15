@@ -1,5 +1,5 @@
 # WordSet
-WordSet is a set of words in the form of a linear, simply connected list which sorted in lexicographic order.
+WordSet is a set of words in the form of a linear, simply connected list which sorted in lexicographic order. You can read more about each methon in [javadoc](https://chackydude.github.io/MyWordSet/javadoc/WordSet.html).
 
 ## Results of the tests
 
