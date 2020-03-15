@@ -37,17 +37,16 @@ public class TimeMeasurements extends JFrame {
             String s = str.toString();
             String s1 = str1.toString();
             String[] strs = new String[i];
-            for (int j = 0; j < i; j++) {
-                strs[j] = "aaaaa";
-            }
 
             long start = System.currentTimeMillis();
 
-            wsw = new WordSet(strs);
+            ws.removePalindrom();
 
             long finish = System.currentTimeMillis();
 
-            y[i] = (int) (start - finish)*50 + 620;
+            long  timeConsumedMillis = finish - start;
+            y[i] = 490 - (int) (timeConsumedMillis * 5);
+
             System.out.println(i);
         }
         JPanel jcp = new JPanel(new BorderLayout());
