@@ -21,22 +21,32 @@ public class TimeMeasurements extends JFrame {
     public static int n = 400;
 
     public TimeMeasurements() {
-        super("WordSetMerge test");
+        super("newWordSetByWordLength test");
         WordSet ws = new WordSet();
         WordSet wws = new WordSet();
         WordSet wsw;
+
+        int counter = 0;
         for (int i = 1;i<401;i++){
             x[i-1] = i + 20;
         }
-        StringBuilder str = new StringBuilder("a");
+        StringBuilder str = new StringBuilder("aaaaa");
+        StringBuilder str1 = new StringBuilder("bbbbb");
+
         for (int i=0;i<400;i++){
             String s = str.toString();
-            ws.insert(s);
-            wws.insert(s);
-            str.append("a");
+            String s1 = str1.toString();
+            String[] strs = new String[i];
+            for (int j = 0; j < i; j++) {
+                strs[j] = "aaaaa";
+            }
+
             long start = System.currentTimeMillis();
-            wsw = new WordSet(ws,wws);
+
+            wsw = new WordSet(strs);
+
             long finish = System.currentTimeMillis();
+
             y[i] = (int) (start - finish)*50 + 620;
             System.out.println(i);
         }

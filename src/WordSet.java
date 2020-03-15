@@ -257,6 +257,9 @@ public class WordSet {
      * M = O(1).
      */
     public boolean contains(String word) {
+        if (word == null) {
+            return false;
+        }
         if (this.head == null) {
             return false;
         } else {
@@ -303,7 +306,7 @@ public class WordSet {
     /**
      * sort words to by first char to consonants or vowels
      * @return - 2 sorted arrays.
-     * T = O(n) (n - the amount of the words in the WordSet).
+     * T = O(n^2) (n - the amount of the words in the WordSet).
      * M = O(n) (n - the amount of the words in the WordSet).
      */
     public WordSet [] vowelDivide() {
@@ -311,7 +314,6 @@ public class WordSet {
         result[0] = new WordSet();
         result[1] = new WordSet();
         if (this.head == null) {
-            // try to fix NullPointerExsception
             return null;
         } else {
             Character[] vowels = new Character[] {'A', 'E', 'I', 'O', 'U', 'Y', 'a', 'e', 'i', 'o', 'u', 'y'};
