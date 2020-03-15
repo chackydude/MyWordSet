@@ -17,6 +17,7 @@ some for O(n^2):
 - WordSet(String[] arr)
 - vowelDivide
 
+
 <img src="https://github.com/chackydude/MyWordSet/raw/master/img/WordSetMerge.jpg" width="250" height="360"/>  <img src="https://github.com/chackydude/MyWordSet/raw/master/img/insert.jpg" width="250" height="360"/>  <img src="https://github.com/chackydude/MyWordSet/raw/master/img/toString.jpg" width="250" height="360"/>  <img src="https://github.com/chackydude/MyWordSet/raw/master/img/delete.jpg" width="250" height="360"/>  <img src="https://github.com/chackydude/MyWordSet/raw/master/img/removePalindrome.jpg" width="250" height="360"/>  <img src="https://github.com/chackydude/MyWordSet/raw/master/img/arrWordSet.png" width="250" height="360"/>  <img src="https://github.com/chackydude/MyWordSet/raw/master/img/newWordSetByWordLength.jpg" width="250" height="360"/>  <img src="https://github.com/chackydude/MyWordSet/raw/master/img/vowelDivide.jpg" width="250" height="360"/>  
 
 
