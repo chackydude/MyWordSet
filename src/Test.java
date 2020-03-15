@@ -7,7 +7,7 @@ public class Test {
 
         WordSet wset = new WordSet(str);
         System.out.println(wset.toString());
-        System.out.println(wset.newWordSetByWordLength(10));
+        System.out.println(wset.newWordSetByWordLength(2));
         System.out.println(wset.vowelDivide()[0].toString());
         System.out.println(wset.vowelDivide()[1].toString());
     }

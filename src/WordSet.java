@@ -61,7 +61,7 @@ public class WordSet {
     /**
      * A constructor that creates an instance of the WordSet class based on an array of words.
      * @param arr - The array from which to create WordSet.
-     * T = O(n^m) (n - the amount of the words in the WordSet,m - the amount of the words in the input array).
+     * T = O(n^2) (n - the amount of the words in the WordSet, m - the amount of the words in the input array).
      * M = O(n) (n - the amount of the words in the WordSet).
      */
     public WordSet(String[] arr) {
@@ -75,7 +75,7 @@ public class WordSet {
      * constructor #2 which merges two WordSets.
      * @param w1 - One of two combined sets
      * @param w2 - One of two combined sets.
-     * T = O(n+m) (n and m - number of elements in the combined sets).
+     * T = O(n + m) (n and m - number of elements in the combined sets).
      * M = O(n + m) (n and m - number of elements in the combined sets).
      */
     public WordSet(WordSet w1,WordSet w2){
@@ -129,7 +129,7 @@ public class WordSet {
      * WordSet string representation
      * @return wordSet string representation
      * T = O(n) (n - the amount of the words in the WordSet).
-     * M = O(n*k + t) (n - the amount of the words in the WordSet, k - average number of characters in a word
+     * M = O(n*k + t) (n - the amount of the words in the WordSet, k - average size of characters in a word
      * of WordSet, t - the amount of memory reserved by StringBuilder).
      */
     public String toString(){
@@ -289,7 +289,6 @@ public class WordSet {
     public WordSet newWordSetByWordLength(int len) {
         WordSet result = new WordSet();
         if (this.head == null) {
-            // try to fix NullPointerExsception
             return null;
         } else {
             Node nextNode = this.head;
